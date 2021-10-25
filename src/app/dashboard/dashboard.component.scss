@@ -1,0 +1,91 @@
+
+.lambda-search-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 15px;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  /* background-image: url('http://103.86.176.210:3000/ProfileImages/lookmateImage1nl5h754kn45sn77.jpg'); */
+  background-size: cover;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.postButton {
+  margin-top: -10px;
+}
+
+.comment_controls{
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+}
+
+
+
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+  
+  .lambda-toolbar-style{
+    height: 57px;
+    justify-content: space-between;
+  }
+
+  .lookmate_header{
+    background-image: url('../../assets/image/icon.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding: 4px;
+  }
+
+  .card-container{
+    margin: auto;
+    width: inherit;
+    padding: 10px;
+  }
+}
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+  .lambda-toolbar-style{
+    height: 74px;
+    justify-content: space-between;
+  }
+  .lookmate_header{
+    background-image: url('../../assets/image/icon.png');
+    padding: 10px;
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .card-container{
+    margin: auto;
+    width: fit-content;
+    padding: 10px;
+  }
+}
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

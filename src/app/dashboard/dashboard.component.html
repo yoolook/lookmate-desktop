@@ -1,0 +1,33 @@
+<p>
+  <mat-toolbar class="lambda-toolbar-style lookmate_header">
+<!--     <div class="lookmate_header"></div> -->
+  </mat-toolbar>
+</p>
+<div class="card-container">
+  <mat-card class="example-card" *ngIf="(screenPictureInfoObject && screenPictureInfoObject.pictureDetails); else imageNotFound">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image" [ngStyle]="{ 'background-image': 'url(' + profileImageSourceAddress + screenPictureInfoObject.pictureDetails.user.lastProfilePicId + ')'}" ></div>
+      <mat-card-title>{{ screenPictureInfoObject.pictureDetails.user.nick_name }}</mat-card-title>
+      <mat-card-subtitle>{{ screenPictureInfoObject.pictureDetails.location }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="imageSourceAddress + screenPictureInfoObject.pictureDetails.picture">
+    <mat-card-content>
+      <p>
+        {{ screenPictureInfoObject.pictureDetails.caption }}
+      </p>
+    </mat-card-content>
+    <div class="comment_controls" *ngIf="_DesktopAppearanceService.protectAndCheckSinglePicSingleUserSingleComment(importedPictureId); else doneComment">
+      <mat-form-field class="example-full-width" appearance="fill" >
+        <mat-label>Leave a comment</mat-label>
+        <textarea matInput [(ngModel)]="pictureComment" placeholder="Ex. It makes me feel..."></textarea>
+      </mat-form-field>
+      <button mat-stroked-button color="primary" class="postButton" (click)="submitComment()">Post</button>
+    </div>
+    <ng-template #doneComment>
+      <span> You have commented. </span>
+    </ng-template>
+  </mat-card>
+  <ng-template #imageNotFound>
+    <span> Image not found </span>
+  </ng-template>
+</div>
