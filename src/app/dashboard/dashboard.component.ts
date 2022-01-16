@@ -22,11 +22,13 @@ export class DashboardComponent implements OnInit {
   public PictureId = "";
   public importedPictureId = "";
   public pictureComment:string;
+  public pictureLoading = true;
   ngOnInit() {
     this._Activatedroute.params.
       pipe(
         mergeMap(pictureId => this._DesktopAppearanceService.getDesktopAppearanceOptions(pictureId.id))
       ).subscribe(pictureInfo => {
+        this.pictureLoading = false;
         this.screenPictureInfoObject = pictureInfo;
         this.importedPictureId = this.screenPictureInfoObject.pictureDetails.picture.substring(this.screenPictureInfoObject.pictureDetails.picture.indexOf('_') + 1, this.screenPictureInfoObject.pictureDetails.picture.length - 4);
       });

@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+    lookmate-service:
+       container_name: lookmate-desktop
+       build: .
+       ports:
+           - "4200:80"

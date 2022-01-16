@@ -1,11 +1,11 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-
+//todo: make two different file for prod and local and configuration on docker as well with argument like --prod.
 export const environment = {
   production: false,
   source :"http://localhost:3000/",
-  /* source : "http://103.86.176.210:3000/", */
+  //source : "http://103.86.176.210:3000/",
   lookmateImages:"Images/",
   lookmateProfileImages:"ProfileImages/",
   desktopAppearanceOptionsEndpoint:"getDesktopDetails/",

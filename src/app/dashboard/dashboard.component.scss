@@ -8,12 +8,6 @@
   font-size: 14px;
 }
 
-
-
-
-
-
-
 .example-card {
   max-width: 400px;
 }
@@ -43,8 +37,13 @@
   align-items: inherit;
 }
 
+.lm-progress-spinner{
+  margin-top: 250px;
+}
 
-
+.lm-mat-card-image{
+  margin-top:10px !important;
+}
 
 @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
   
