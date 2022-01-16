@@ -31,6 +31,9 @@ export class DashboardComponent implements OnInit {
         this.pictureLoading = false;
         this.screenPictureInfoObject = pictureInfo;
         this.importedPictureId = this.screenPictureInfoObject.pictureDetails.picture.substring(this.screenPictureInfoObject.pictureDetails.picture.indexOf('_') + 1, this.screenPictureInfoObject.pictureDetails.picture.length - 4);
+      },
+      (error) => {
+        this.pictureLoading = false;
       });
   }
 

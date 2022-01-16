@@ -4,10 +4,7 @@
   </mat-toolbar>
 </p>
 <div class="card-container">
-  <mat-progress-spinner class="lm-progress-spinner" mode="indeterminate" color="warn" value=20 *ngIf="pictureLoading">
-  </mat-progress-spinner>
-
-  <mat-card class="example-card" *ngIf="(screenPictureInfoObject && screenPictureInfoObject.pictureDetails); else imageNotFound">
+  <mat-card class="example-card" *ngIf="(screenPictureInfoObject && screenPictureInfoObject.pictureDetails); else imageLoading">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image" [ngStyle]="{ 'background-image': 'url(' + profileImageSourceAddress + screenPictureInfoObject.pictureDetails.user.lastProfilePicId + ')'}" ></div>
       <mat-card-title>{{ screenPictureInfoObject.pictureDetails.user.nick_name }}</mat-card-title>
@@ -30,6 +27,11 @@
       <span> You have commented. </span>
     </ng-template>
   </mat-card>
+  <ng-template #imageLoading>
+    <mat-progress-spinner class="lm-progress-spinner" mode="indeterminate" color="warn" value=20 *ngIf="pictureLoading else imageNotFound">
+    </mat-progress-spinner>
+  </ng-template>
+
   <ng-template #imageNotFound>
     <span> Taking longer than expected, or image not found. </span>
   </ng-template>
