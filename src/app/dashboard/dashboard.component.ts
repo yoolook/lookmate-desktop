@@ -24,7 +24,10 @@ export class DashboardComponent implements OnInit {
   public pictureComment:string;
   public pictureLoading = true;
   ngOnInit() {
-    this._Activatedroute.params.
+    /* In case we get id from params */
+    //this._Activatedroute.params.
+    /* In case we get id from query params */
+    this._Activatedroute.queryParams.
       pipe(
         mergeMap(pictureId => this._DesktopAppearanceService.getDesktopAppearanceOptions(pictureId.id))
       ).subscribe(pictureInfo => {
