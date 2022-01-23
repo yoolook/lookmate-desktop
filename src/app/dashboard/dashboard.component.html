@@ -6,7 +6,7 @@
 <div class="card-container">
   <mat-card class="example-card" *ngIf="(screenPictureInfoObject && screenPictureInfoObject.pictureDetails); else imageLoading">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image" [ngStyle]="{ 'background-image': 'url(' + profileImageSourceAddress + screenPictureInfoObject.pictureDetails.user.lastProfilePicId + ')'}" ></div>
+      <div mat-card-avatar class="example-header-image" [ngStyle]="{ 'background-image': 'url(' + profilePicture + ')'}" ></div>
       <mat-card-title>{{ screenPictureInfoObject.pictureDetails.user.nick_name }}</mat-card-title>
       <mat-card-subtitle>{{ screenPictureInfoObject.pictureDetails.location }}</mat-card-subtitle>
     </mat-card-header>

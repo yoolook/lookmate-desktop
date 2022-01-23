@@ -23,6 +23,7 @@ export class DashboardComponent implements OnInit {
   public importedPictureId = "";
   public pictureComment:string;
   public pictureLoading = true;
+  public profilePicture = "../../assets/image/lookmate-default-user-profile-pic.png"
   ngOnInit() {
     /* In case we get id from params */
     //this._Activatedroute.params.
@@ -33,6 +34,9 @@ export class DashboardComponent implements OnInit {
       ).subscribe(pictureInfo => {
         this.pictureLoading = false;
         this.screenPictureInfoObject = pictureInfo;
+        if(this.screenPictureInfoObject.pictureDetails?.user?.lastProfilePicId){
+          this.profilePicture = this.profileImageSourceAddress + this.screenPictureInfoObject.pictureDetails.user.lastProfilePicId;
+        }
         this.importedPictureId = this.screenPictureInfoObject.pictureDetails.picture.substring(this.screenPictureInfoObject.pictureDetails.picture.indexOf('_') + 1, this.screenPictureInfoObject.pictureDetails.picture.length - 4);
       },
       (error) => {
