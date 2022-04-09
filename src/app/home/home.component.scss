@@ -1,58 +1,204 @@
-@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
-    .lambda-toolbar-style{
-      height: 57px;
-      justify-content: space-between;
-    }
-    .lookmate_header{
-      background-image: url('../../assets/image/icon.png');
-      background-size: 50px;
-      background-repeat: no-repeat;
-      background-origin: content-box;
-      padding: 4px;
-    }
-    .card-container{
-        margin: auto;
-        width: inherit;
-        padding: 10px;
-      }
-    .android-image{
-        background-image: url('../../assets/image/android.png');
-        padding: 20px;
-        background-size: 150px;
-        height: 600px;
-        background-repeat: no-repeat;
-        background-origin: content-box;
-        background-position: top;
-    }
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width:320px) {
+
+  footer {
+    background: #c95754ad;
+    height: 40px;
+    color: #ffffff;
   }
-  @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
-  @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
-    .lambda-toolbar-style{
-      height: 74px;
-      justify-content: space-between;
-    }
-    .lookmate_header{
-      background-image: url('../../assets/image/icon.png');
-      padding: 10px;
-      background-size: 55px;
-      background-repeat: no-repeat;
-      background-origin: content-box;
-    }
-    .card-container{
-        margin: auto;
-        width: fit-content;
-        padding: 10px;
-      }
-    .android-image{
-        background-image: url('../../assets/image/android.png');
-        padding: 20px;
-        background-size: 150px;
-        height: 600px;
-        background-repeat: no-repeat;
-        background-origin: content-box;
-        background-position: top;
-    }
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .lambda-toolbar-style {
+    height: 57px;
+    background: #c95754ad;
+    justify-content: space-between;
   }
-  @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-  @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-  @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+  .lookmate_icon {
+    background-image: url('../../assets/image/icon.png');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding: 10px 0px 0px 0px;
+    height: 80px;
+  }
+
+  .android-image {
+    background-image: url('../../assets/image/lookmate dashboard.png');
+    padding: 0px;
+    background-size: 300px;
+    height: 310px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: top;
+  }
+
+  .footer-text {
+    text-align: center;
+    font: 500 13px/25px Candara, Roboto, Helvetica Neue, sans-serif;
+    letter-spacing: normal;
+  }
+
+  .horizontal-center-position {
+    margin: auto;
+    width: 80%;
+  }
+
+  .android-icon {
+    height: 50px;
+  }
+
+  .site-text {
+    margin-top: 40px;
+  }
+
+  .site-headline {
+    font: 700 21px/26px Candara, Roboto, Helvetica Neue, sans-serif;
+    letter-spacing: normal;
+  }
+
+  .site-tagline {
+    font: 400 14px/23px Candara, Roboto, Helvetica Neue, sans-serif;
+    color: grey;
+    letter-spacing: normal;
+  }
+
+  .list-inline-item {
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .article-left-margin {
+    padding-left: 20px;
+  }
+
+}
+
+@media (min-width:600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  article {
+    flex: 1;
+    background: #ffffff;
+  }
+
+  aside {
+    flex: 1;
+    background: #ffffff;
+  }
+
+  footer {
+    background: #c95754ad;
+    height: 150px;
+    color: #ffffff;
+  }
+
+  .lambda-toolbar-style {
+    height: 74px;
+    justify-content: space-between;
+  }
+
+  .lookmate_header {
+    background-image: url('../../assets/image/icon.png');
+    padding: 10px;
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+  .site-text {
+    margin-top: 60px;
+  }
+
+  .horizontal-center-position {
+    margin: auto;
+    width: 80%;
+  }
+
+  .footer-text {
+    text-align: center;
+    font: 500 20px/150px Candara, Roboto, Helvetica Neue, sans-serif;
+    letter-spacing: normal;
+  }
+
+  .site-headline {
+    font: 700 44px/50px Candara, Roboto, Helvetica Neue, sans-serif;
+    letter-spacing: normal;
+    margin: 0 0 16px;
+  }
+
+  .site-tagline {
+    font: 400 19px/36px Candara, Roboto, Helvetica Neue, sans-serif;
+    color: gray;
+    letter-spacing: normal;
+  }
+
+  .android-icon {
+    height: 50px;
+  }
+
+  .list-inline-item {
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  /*  header,footer,article,nav,aside {
+      padding: 1em;
+    } */
+
+  .android-image {
+    background-image: url('../../assets/image/lookmate dashboard.png');
+    padding: 0px;
+    background-size: 520px;
+    height: 654px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: top;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+
+  .horizontal-center-position {
+    margin: auto;
+    width: 80%;
+  }
+
+  .article-left-margin {
+    padding-left: 60px;
+  }
+
+  .site-text {
+    margin-top: 210px;
+  }
+
+  .footer-text {
+    text-align: center;
+    font: 500 20px/150px Candara, Roboto, Helvetica Neue, sans-serif;
+    letter-spacing: normal;
+  }
+}
+
+@media (min-width:480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+
+@media (min-width:801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+}
