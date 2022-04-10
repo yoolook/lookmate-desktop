@@ -39,11 +39,34 @@ main {
     background-position: top;
   }
 
+  .info-icon {
+    background-image: url('../../assets/image/circle-info-solid.svg');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: bottom;
+    background-size: 18px;
+    height: 19px;
+    display: inline-block;
+    float: left;
+    min-width: 24px;
+  }
+
+  .info-statement{
+    display: inline-block;
+    min-width: 20px;
+    padding: 5px;
+  }
+
   .footer-text {
     text-align: center;
     font: 500 13px/25px Candara, Roboto, Helvetica Neue, sans-serif;
     letter-spacing: normal;
     padding: 4%;
+  }
+
+  .info-note{
+    font: 600 12px/12px Candara,Roboto,Helvetica Neue,sans-serif;
+    color:red;
   }
 
   .horizontal-center-position {
@@ -116,6 +139,28 @@ main {
     margin-top: 60px;
   }
 
+  .info-icon {
+    background-image: url('../../assets/image/circle-info-solid.svg');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: bottom;
+    background-size: 18px;
+    height: 19px;
+    display: inline-block;
+    float: left;
+    min-width: 24px;
+  }
+
+  .info-statement{
+    display: inline-block;
+    min-width: 20px;
+    padding: 5px;
+  }
+
+  .info-note{
+    font: 600 12px/12px Candara,Roboto,Helvetica Neue,sans-serif;
+    color:red;
+  }
   .horizontal-center-position {
     margin: auto;
     width: 80%;
@@ -182,11 +227,34 @@ main {
     margin-top: 210px;
   }
 
+  .info-statement{
+    display: inline-block;
+    min-width: 20px;
+    padding: 5px;
+  }
+
   .footer-text {
     text-align: center;
     font: 500 20px/150px Candara, Roboto, Helvetica Neue, sans-serif;
     letter-spacing: normal;
     padding: 0%;
+  }
+
+  .info-icon {
+    background-image: url('../../assets/image/circle-info-solid.svg');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: bottom;
+    background-size: 18px;
+    height: 19px;
+    display: inline-block;
+    float: left;
+    min-width: 24px;
+  }
+
+  .info-note{
+    font: 600 12px/12px Candara,Roboto,Helvetica Neue,sans-serif;
+    color:red;
   }
 
   .android-image {
