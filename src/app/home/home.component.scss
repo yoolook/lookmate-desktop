@@ -11,7 +11,7 @@ main {
 
   footer {
     background: #c95754ad;
-    height: 40px;
+    height: 65px;
     color: #ffffff;
   }
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
@@ -33,7 +33,7 @@ main {
     background-image: url('../../assets/image/lookmate dashboard.png');
     padding: 0px;
     background-size: 300px;
-    height: 310px;
+    height: 462px;
     background-repeat: no-repeat;
     background-origin: content-box;
     background-position: top;
@@ -43,6 +43,7 @@ main {
     text-align: center;
     font: 500 13px/25px Candara, Roboto, Helvetica Neue, sans-serif;
     letter-spacing: normal;
+    padding: 4%;
   }
 
   .horizontal-center-position {
@@ -124,6 +125,7 @@ main {
     text-align: center;
     font: 500 20px/150px Candara, Roboto, Helvetica Neue, sans-serif;
     letter-spacing: normal;
+    padding: 4%;
   }
 
   .site-headline {
@@ -184,6 +186,7 @@ main {
     text-align: center;
     font: 500 20px/150px Candara, Roboto, Helvetica Neue, sans-serif;
     letter-spacing: normal;
+    padding: 4%;
   }
 }
 
