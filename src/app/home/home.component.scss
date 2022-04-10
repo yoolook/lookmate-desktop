@@ -125,7 +125,7 @@ main {
     text-align: center;
     font: 500 20px/150px Candara, Roboto, Helvetica Neue, sans-serif;
     letter-spacing: normal;
-    padding: 4%;
+    padding: 0%;
   }
 
   .site-headline {
@@ -186,7 +186,17 @@ main {
     text-align: center;
     font: 500 20px/150px Candara, Roboto, Helvetica Neue, sans-serif;
     letter-spacing: normal;
-    padding: 4%;
+    padding: 0%;
+  }
+
+  .android-image {
+    background-image: url('../../assets/image/lookmate dashboard.png');
+    padding: 0px;
+    background-size: 520px;
+    height:720px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: top;
   }
 }
 
