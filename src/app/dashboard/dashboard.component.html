@@ -1,8 +1,10 @@
 <p>
   <mat-toolbar class="lambda-toolbar-style lookmate_header">
-<!--     <div class="lookmate_header"></div> -->
+    <div></div>
+    <a class="helper_link" href="https://play.google.com/store/apps/details?id=in.lookmate.lookmate&ah=g6U-NnHvyrqQUcoXQ26u0iCxglA"><span class="lookmate_header_text">You should try it once..</span><span class="lookmate_header_right_icon"></span></a>
   </mat-toolbar>
 </p>
+
 <div class="card-container">
   <mat-card class="example-card" *ngIf="(screenPictureInfoObject && screenPictureInfoObject.pictureDetails); else imageLoading">
     <mat-card-header>
@@ -31,6 +33,13 @@
     <mat-progress-spinner class="lm-progress-spinner" mode="indeterminate" color="warn" value=20 *ngIf="pictureLoading else imageNotFound">
     </mat-progress-spinner>
   </ng-template>
+
+  <div class="base-store-icon">
+    <div class="base-store-text">Get it now and post your pictures...</div>
+    <a class="base-store-android-icon" href="https://play.google.com/store/apps/details?id=in.lookmate.lookmate&ah=g6U-NnHvyrqQUcoXQ26u0iCxglA">
+      <img class="android-icon" src="assets/image/appstore-android.svg" alt="google play">
+    </a>
+  </div>
 
   <ng-template #imageNotFound>
     <span> Taking longer than expected, or image not found. </span>

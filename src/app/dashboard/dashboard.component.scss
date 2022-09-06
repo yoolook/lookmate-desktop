@@ -1,4 +1,6 @@
 
+
+
 .lambda-search-right {
   display: flex;
   justify-content: center;
@@ -6,6 +8,34 @@
   flex-direction: column;
   margin: 15px;
   font-size: 14px;
+}
+
+.lookmate_header_text{
+  font-size: 14px;
+}
+
+.helper_link {
+  display:flex;
+  text-decoration: none;
+}
+
+.base-store-icon{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.base-store-text {
+  align-self: center;
+  font-size: 14px;
+}
+.base-store-android-icon{
+  margin-top:5px;
+  align-self: center;
+}
+
+.android-icon {
+  height: 40px;
 }
 
 .example-card {
@@ -54,6 +84,17 @@
     justify-content: space-between;
   }
 
+  .lookmate_header_right_icon{
+    background-image: url('../../assets/image/Right-Arrow-Icon-PNG.png');
+    padding-right: 10px;
+    padding-left: 4px;
+    padding-top: 8px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+
   .lookmate_header{
     background-image: url('../../assets/image/icon.png');
     background-size: 50px;
@@ -74,6 +115,22 @@
     height: 74px;
     justify-content: space-between;
   }
+
+  .lookmate_header_text{
+    font-size: 14px;
+  }
+
+  .lookmate_header_right_icon{
+    background-image: url('../../assets/image/Right-Arrow-Icon-PNG.png');
+    padding-right: 10px;
+    padding-left: 4px;
+    padding-top: 8px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+  
   .lookmate_header{
     background-image: url('../../assets/image/icon.png');
     padding: 10px;
